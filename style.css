@@ -1,0 +1,245 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* BODY GLOBAL */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #121212;
+  color: #ffffff;
+  line-height: 1.7;
+}
+
+/* HEADER */
+header {
+  background-color: #1f1f2e;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #0dcaf0;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #0dcaf0;
+}
+
+/* HERO */
+.hero {
+  padding: 4rem 2rem;
+  text-align: center;
+  background: linear-gradient(135deg, #0d1a2b, #1a2f45);
+}
+
+.hero h1 {
+  font-size: 2.8rem;
+  margin-bottom: 1rem;
+  color: #0dcaf0;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  color: #cccccc;
+}
+
+.hero button {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border: none;
+  background-color: #0dcaf0;
+  color: #121212;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.hero button:hover {
+  background-color: #09bad6;
+}
+
+/* MAIN SECTIONS */
+main {
+  padding: 2rem 2.5rem;
+}
+
+main h1, main h2, main h3 {
+  color: #0dcaf0;
+  margin-bottom: 0.6rem;
+}
+
+section {
+  margin-bottom: 3rem;
+}
+
+p, ul, li {
+  font-size: 1rem;
+  color: #dddddd;
+}
+
+ul {
+  margin-left: 1.5rem;
+}
+
+/* LAYANAN */
+.layanan {
+  margin-bottom: 1.5rem;
+  padding: 1rem 1.5rem;
+  border-left: 4px solid #0dcaf0;
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 10px;
+}
+
+.layanan h3 {
+  margin-bottom: 0.5rem;
+}
+
+/* FORM KONTAK */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+input, textarea {
+  padding: 0.75rem;
+  border-radius: 6px;
+  border: none;
+  background-color: #2a2a3d;
+  color: #ffffff;
+  resize: none;
+}
+
+input:focus, textarea:focus {
+  outline: 2px solid #0dcaf0;
+}
+
+button[type="submit"] {
+  background-color: #0dcaf0;
+  color: #121212;
+  border: none;
+  padding: 0.75rem;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: background 0.3s;
+}
+
+button[type="submit"]:hover {
+  background-color: #09bad6;
+}
+
+/* CHART SECTION */
+.chart-grid {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+canvas {
+  background: #1c1c2b;
+  border-radius: 12px;
+  padding: 1rem;
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.1);
+}
+
+/* FOOTER */
+footer {
+  background-color: #1f1f2e;
+  color: #888888;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+  margin-top: 3rem;
+}
+
+/* LINK STYLING */
+a {
+  color: #0dcaf0;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  main {
+    padding: 1.5rem;
+  }
+}
+
+.kontak-grid {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2rem;
+  padding-top: 2rem;
+  flex-wrap: wrap;
+}
+
+.kontak-kiri {
+  flex: 1 1 65%;
+}
+
+.kontak-kanan {
+  flex: 1 1 30%;
+  display: flex;
+}
+
+.kontak-kanan img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #0dcaf0;
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.2);
+  
+}
+
+/* Responsive: Stack vertically on small screens */
+@media (max-width: 768px) {
+  .kontak-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .kontak-kanan {
+    justify-content: center;
+    margin-top: 1.5rem;
+  }
+}

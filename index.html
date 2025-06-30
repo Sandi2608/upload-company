@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="logo"> PT Sigma Cipta Utama</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Dashboard</a></li>
+        <li><a href="pages/tentang.html">Tentang</a></li>
+        <li><a href="pages/layanan.html">Layanan</a></li>
+        <li><a href="pages/kontak.html">Kontak</a></li>
+        <li><a href="pages/tutorial.html">Tutorial Hosting</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+   <section class="hero">
+  <h1>Sigma Cipta Utama</h1>
+  <p>The only oil and gas data management company in Indonesia which complies to government regulations and industrial standards.</p>
+  <button onclick="scrollToSection()">Lihat Dashboard</button>
+</section>
+
+    <section id="dashboard">
+  <h2>Statistik Kerjasama</h2>
+  <div class="chart-grid">
+    <div>
+      <h3>Jumlah Proyek</h3>
+      <canvas id="partnershipChart"></canvas>
+    </div>
+    <div>
+      <h3>Distribusi Proyek</h3>
+      <canvas id="pieChart"></canvas>
+    </div>
+    <div>
+      <h3>Tren Proyek Tahunan</h3>
+      <canvas id="lineChart"></canvas>
+    </div>
+  </div>
+</section>
+
+  </main>
+
+  <footer>
+    <p>© 2025 Design By Sandi Satria Augustian. All rights reserved.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
